@@ -1,0 +1,16 @@
+<app-header [title]="title"></app-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let p of [1,1,1,1,1,1]; let i = index"  class="ion-padding" [ngStyle]="{boxShadow: 'none', border: '0.5px solid #CCC'}">
+      <ion-item>
+        <ion-label>
+          <h3><ion-skeleton-text animated style="width: 70%"></ion-skeleton-text></h3>
+         <p><ion-skeleton-text animated style="width: 100%"></ion-skeleton-text> </p>
+        </ion-label>
+          <ion-skeleton-text slot="end" animated style="width: 40%"></ion-skeleton-text>
+
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>

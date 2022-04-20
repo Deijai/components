@@ -1,3 +1,39 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+
+  <!-- can be "xs", "sm", "md", "lg", or "xl" -->
+<ion-split-pane when="md" contentId="main">
+
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-buttons slot="start">
+        <ion-button>
+          <ion-back-button defaultHref="/" text="Voltar"></ion-back-button>
+        </ion-button>
+      </ion-buttons>
+      <ion-toolbar color="primary">
+        <ion-title>Menu!!</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+
+        <ion-menu-toggle *ngFor="let p of lista$ | async" autoHide="false">
+          <ion-item
+          [routerLink]="p.redirectTo" detail>
+           <ion-icon slot="start" [name]="p.icon"></ion-icon>
+           {{p.name}}
+         </ion-item>
+        </ion-menu-toggle>
+
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+
+</ion-split-pane>
+
+
+
+
 </ion-app>

@@ -1,0 +1,37 @@
+<app-header [title]="title"></app-header>
+<ion-content class="ion-padding">
+  <ion-list>
+
+    <ion-item-sliding  *ngFor="let user of list$ | async">
+
+      <ion-item-options side="start">
+
+        <ion-item-option (click)="update(user)">
+          <ion-icon name="create-outline"></ion-icon>
+        </ion-item-option>
+
+        <ion-item-option color="danger" (click)="del(user)">
+          <ion-icon name="trash-outline"></ion-icon>
+        </ion-item-option>
+
+      </ion-item-options>
+
+      <ion-item>
+        <ion-label>
+          <h3>{{user.name}}</h3>
+          <p>{{user.email}}</p>
+        </ion-label>
+        <ion-label slot="end" class="ion-text-end text-small">
+              {{user.username}}
+        </ion-label>
+      </ion-item>
+
+
+
+    </ion-item-sliding>
+
+
+
+  </ion-list>
+
+</ion-content>

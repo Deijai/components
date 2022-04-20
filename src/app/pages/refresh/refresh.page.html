@@ -1,0 +1,15 @@
+<app-header [title]="title"></app-header>
+<ion-content class="ion-padding">
+
+  <ion-list>
+    <ion-item *ngFor="let p of items; let i = index">
+      <ion-label slot="start"> {{p.title}} </ion-label>
+      <ion-label slot="end"> {{p.doc}} </ion-label>
+    </ion-item>
+  </ion-list>
+
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+</ion-content>

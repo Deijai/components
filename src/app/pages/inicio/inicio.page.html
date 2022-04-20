@@ -1,0 +1,32 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+
+    <ion-buttons slot="start">
+      <ion-button (click)="onClick()">
+        <ion-icon slot="start" name="menu-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+
+    <ion-title>Componentes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+      <ion-item *ngFor="let p of lista$ | async"
+       [routerLink]="p.redirectTo" detail>
+        <ion-icon slot="start" [name]="p.icon"></ion-icon>
+        {{p.name}}
+      </ion-item>
+
+  </ion-list>
+ <!--
+
+   <ion-button routerLink="/alert" color="primary">Alert</ion-button>
+  <ion-button routerLink="/action-sheet" color="primary">Action Sheet</ion-button>
+
+  ---->
+
+</ion-content>

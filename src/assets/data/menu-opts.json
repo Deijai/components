@@ -1,0 +1,134 @@
+[
+    {
+        "icon": "magnet-outline",
+        "name": "Action Sheet",
+        "redirectTo": "/action-sheet"
+      },
+      {
+        "icon": "alert-circle-outline",
+        "name": "Alert",
+        "redirectTo": "/alert"
+      },
+      {
+        "icon": "logo-javascript",
+        "name": "Avatar",
+        "redirectTo": "/avatar"
+      },
+      {
+        "icon": "checkmark-done-outline",
+        "name": "Button",
+        "redirectTo": "/button"
+      },
+      {
+        "icon": "id-card-outline",
+        "name": "Card",
+        "redirectTo": "/card"
+      },
+      {
+        "icon": "checkbox-outline",
+        "name": "Checkbox",
+        "redirectTo": "/checkbox"
+      },
+      {
+        "icon": "calendar-outline",
+        "name": "Date E Time",
+        "redirectTo": "/date-time"
+      },
+      {
+        "icon": "add",
+        "name": "Fab",
+        "redirectTo": "/fab"
+      },
+      {
+        "icon": "grid-outline",
+        "name": "Grid",
+        "redirectTo": "/grid"
+      },
+      {
+        "icon": "infinite-outline",
+        "name": "Infinity Scroll",
+        "redirectTo": "/infinity-scroll"
+      },
+      {
+        "icon": "duplicate-outline",
+        "name": "Input",
+        "redirectTo": "/input"
+      },
+      {
+        "icon": "list-circle-outline",
+        "name": "List",
+        "redirectTo": "/list"
+      },
+      {
+        "icon": "list-outline",
+        "name": "List Reorder",
+        "redirectTo": "/list-reorder"
+      },
+      {
+        "icon": "refresh-outline",
+        "name": "Loading",
+        "redirectTo": "/loading"
+      },
+      {
+        "icon": "menu-outline",
+        "name": "Menu",
+        "redirectTo": "/menu"
+      },
+      {
+        "icon": "document-text-outline",
+        "name": "Modal",
+        "redirectTo": "/modal"
+      },
+      {
+        "icon": "chatbubble-outline",
+        "name": "Popover",
+        "redirectTo": "/popover"
+      },
+      {
+        "icon": "reload-outline",
+        "name": "Progress Bar",
+        "redirectTo": "/progress-bar"
+      },
+      {
+        "icon": "sync-outline",
+        "name": "Range",
+        "redirectTo": "/range"
+      },
+      {
+        "icon": "refresh-circle-outline",
+        "name": "Refresh",
+        "redirectTo": "/refresh"
+      },
+      {
+        "icon": "search-outline",
+        "name": "Searchbar",
+        "redirectTo": "/searchbar"
+      },
+      {
+        "icon": "code-working-outline",
+        "name": "Segment",
+        "redirectTo": "/segment"
+      },
+      {
+        "icon": "pause-outline",
+        "name": "Skeleton",
+        "redirectTo": "/skeleton"
+      },
+      {
+        "icon": "albums-outline",
+        "name": "Slides",
+        "redirectTo": "/slides"
+      },
+      {
+        "icon": "tablet-landscape-outline",
+        "name": "Tabs",
+        "redirectTo": "/tabs"
+      },
+      {
+        "icon": "aperture-outline",
+        "name": "Toast",
+        "redirectTo": "/toast"
+      }
+]
+
+

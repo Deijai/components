@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+     <ion-back-button defaultHref="/" color="primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Segment</ion-title>
+
+    <ion-segment (ionChange)="segmentChanged($event)" value="todos">
+
+      <ion-segment-button value="todos">
+        <ion-label>Todos</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="marvel">
+        <ion-label>Marvel</ion-label>
+      </ion-segment-button>
+
+      <ion-segment-button value="dc">
+        <ion-label>DC Comics</ion-label>
+      </ion-segment-button>
+
+    </ion-segment>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+  <ion-list>
+    <ion-card *ngFor="let p of (superHeroes$ | async) | filtro:segmentCurrent:'publisher'"  class="ion-padding" [ngStyle]="{boxShadow: 'none', border: '0.5px solid #CCC'}">
+      <ion-item>
+        <ion-label>{{p.superhero}}</ion-label>
+        <ion-label>
+            <ion-item>{{p.publisher}}</ion-item>
+            <ion-item>{{p.alter_ego}}</ion-item>
+        </ion-label>
+        <ion-label>{{p.first_appearance}}</ion-label>
+        <ion-label>{{p.characters}}</ion-label>
+      </ion-item>
+    </ion-card>
+  </ion-list>
+</ion-content>
+
